@@ -26,5 +26,5 @@ doctor_info = {
     "General Medicine": {
         "description": "Diabetes & Hypertension Care,Routine Check-ups,Infectious Disease Management",
         "doctors": ["Dr.Raj Sharma"]
-    },
+    }
 }
