@@ -10,10 +10,10 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 
 
 def generate_reply(user_input):
-    context = "You are a hospital assistant bot. Suggest departments and doctors and tell about diseases."
+    content = "You are a hospital assistant bot. Suggest departments and doctors and tell about diseases."
     for dept, data in doctor_info.items():
-        context += f"\n\nDepartment: {dept}\nDescription: {data['description']}\nDoctors: {', '.join(data['doctors'])}"
-    prompt = f"{context}\n\nUser: {user_input}\nAssistant:"
+        content += f"\n\nDepartment: {dept}\nDescription: {data['description']}\nDoctors: {', '.join(data['doctors'])}"
+    prompt = f"{content}\n\nUser: {user_input}\nAssistant:"
     response = model.generate_content(prompt)
     return response.text
 
@@ -41,7 +41,7 @@ for sender, message in st.session_state.history:
     with st.chat_message(sender.lower()):
         st.markdown(message)
 
-# Optional: Book via chatbot
+#  Book via chatbot
 with st.expander("📅 Book Appointment"):
     name = st.text_input("Your Name")
     department = st.selectbox("Choose Department", ["Cardiology", "ENT", "Neurology","General Medicine","Pediatrics","Orthopedics","Gynecology"])
