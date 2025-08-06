@@ -10,8 +10,13 @@ import mysql.connector
 db = mysql.connector.connect(
     host="sql12.freesqldatabase.com",
     user="sql12793830",
-    password="eunM8QMpPz",   # Replace this
+    password="eunM8QMpPz",   
     database="sql12793830"
+    # host="sql12.freesqldatabase.com",
+    # user="sql12792378",
+    # password="3nI71j5Vfs",   # Replace this
+    # database="sql12792378"
+
 )
 cursor = db.cursor()
 

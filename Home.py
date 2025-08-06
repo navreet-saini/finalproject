@@ -38,7 +38,7 @@ for id,name,dname,doc,done in all_app:
         checked= st.checkbox(" Done ",key={id},value=bool(done))
 
         if checked != bool(done):
-            cursor.execute(f"update appointments set app_done = {checked} where id= {id}")
+            cursor.execute(f"update appointments set appointment_done = {checked} where id= {id}")
             db.commit()
     with app_id:
         st.write(f"{id}")
