@@ -16,12 +16,11 @@ db = mysql.connector.connect(
     # user="sql12792378",
     # password="3nI71j5Vfs",   # Replace this
     # database="sql12792378 "
-     host="localhost",
+    host="localhost",
     port=3306,
     username="root",
     password="123456",
     database="hospital_db"
-
 )
 cursor = db.cursor()
 

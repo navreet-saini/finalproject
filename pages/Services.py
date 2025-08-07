@@ -1,8 +1,8 @@
 import streamlit as st
 
-st.set_page_config(page_title="Our Services - CityCare Hospital", layout="wide")
+st.set_page_config(page_title="Our Services - Adesh Hospital", layout="wide")
 st.title("🏥 Our Medical Services")
-st.markdown("Welcome to **CityCare Hospital**, where your health is our top priority. We offer a comprehensive range of medical services led by experienced doctors and supported by state-of-the-art facilities.")
+st.markdown("Welcome to **Adesh Hospital**, where your health is our top priority. We offer a comprehensive range of medical services led by experienced doctors and supported by state-of-the-art facilities.")
 st.header("🌟 Key Departments & Services")
 
 col1, col2 = st.columns(2)
