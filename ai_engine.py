@@ -8,14 +8,19 @@ import mysql.connector
 
 # MySQL connection
 db = mysql.connector.connect(
-    host="sql12.freesqldatabase.com",
-    user="sql12793830",
-    password="eunM8QMpPz",   
-    database="sql12793830"
+    # host="sql12.freesqldatabase.com",
+    # user="sql12793830",
+    # password="eunM8QMpPz",   
+    # database="sql12793830"
     # host="sql12.freesqldatabase.com",
     # user="sql12792378",
     # password="3nI71j5Vfs",   # Replace this
-    # database="sql12792378"
+    # database="sql12792378 "
+     host="localhost",
+    port=3306,
+    username="root",
+    password="123456",
+    database="hospital_db"
 
 )
 cursor = db.cursor()
